@@ -15,6 +15,7 @@ class CreateVsalesTable extends Migration
     {
         Schema::create('vsales', function (Blueprint $table) {
             $table->increments('id');
+            $table->time('salida');
             $table->timestamps();
         });
     }

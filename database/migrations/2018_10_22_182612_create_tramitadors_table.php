@@ -15,6 +15,8 @@ class CreateTramitadorsTable extends Migration
     {
         Schema::create('tramitadors', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nombre');
+            $table->string('gafete');
             $table->timestamps();
         });
     }

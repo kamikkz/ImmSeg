@@ -15,6 +15,10 @@ class CreateCargasTable extends Migration
     {
         Schema::create('cargas', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('operador');
+            $table->string('g_master');
+            $table->integer('pieza');
+            $table->float('kilo', 8, 2);
             $table->timestamps();
         });
     }

@@ -4,18 +4,20 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVentrasTable extends Migration
+class CreateVcsTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Esta tabla aun tiene que ir super relacionada
      *
-     * @return void
+     * @Relacionar con todas las demas tablas excepto b1s
      */
     public function up()
     {
-        Schema::create('ventras', function (Blueprint $table) {
+        Schema::create('vcs', function (Blueprint $table) {
             $table->increments('id');
-            $table->time('entrada');
+            $table->string('revisor');
+            $table->string('turno');
+            $table->string('jefe');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateVentrasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ventras');
+        Schema::dropIfExists('vcs');
     }
 }
