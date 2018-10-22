@@ -13,7 +13,26 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="2018_10_22_172729_create_kamis_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_10_22_172729_create_kamis_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="18" column="35" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="18" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,6 +48,7 @@
         <option value="$PROJECT_DIR$/resources/views/error.php" />
         <option value="$PROJECT_DIR$/resources/views/info.php" />
         <option value="$PROJECT_DIR$/public/css/Bootstrap-select.css" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_10_22_172729_create_kamis_table.php" />
       </list>
     </option>
   </component>
@@ -133,9 +153,9 @@
       <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="110" />
-    <option name="y" value="-17" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1373" />
+    <option name="y" value="-23" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -156,7 +176,13 @@
             <path>
               <item name="ImmSeg" type="b2602c69:ProjectViewProjectNode" />
               <item name="ImmSeg" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImmSeg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImmSeg" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -200,15 +226,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540241274065</updated>
-      <workItem from="1540241281938" duration="3904000" />
+      <workItem from="1540241281938" duration="5216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3904000" />
+    <option name="totallyTimeSpent" value="5216000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -279,13 +306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/error.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -321,6 +341,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_10_22_172729_create_kamis_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
