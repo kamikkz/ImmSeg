@@ -153,6 +153,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Caffeinated\Shinobi\ShinobiServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -161,6 +162,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
 
     ],
 
@@ -212,6 +214,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
 
     ],
 

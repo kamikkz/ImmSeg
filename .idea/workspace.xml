@@ -17,8 +17,8 @@
       <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="63" column="39" lean-forward="true" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+            <state relative-caret-position="309">
+              <caret line="209" column="63" lean-forward="true" selection-start-line="209" selection-start-column="63" selection-end-line="209" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -128,6 +128,11 @@
       <path value="$PROJECT_DIR$/vendor/caffeinated/shinobi" />
       <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
       <path value="$PROJECT_DIR$/vendor/snapappointments/bootstrap-select" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -201,12 +206,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540241274065</updated>
-      <workItem from="1540241281938" duration="1076000" />
+      <workItem from="1540241281938" duration="1439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1076000" />
+    <option name="totallyTimeSpent" value="1439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -259,8 +264,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="63" column="39" lean-forward="true" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+        <state relative-caret-position="309">
+          <caret line="209" column="63" lean-forward="true" selection-start-line="209" selection-start-column="63" selection-end-line="209" selection-end-column="63" />
         </state>
       </provider>
     </entry>
