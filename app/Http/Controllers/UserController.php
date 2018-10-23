@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
-
+use App\Http\Requests\UserStoreRequest;
+use App\Http\Requests\UserUpdateRequest;
 class UserController extends Controller
 {
     /**
@@ -25,7 +26,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('users.create');
+        return view('CRUD_Usuarios.create');
     }
 
     /**
@@ -34,10 +35,18 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserStoreRequest $request)
     {
-        $user=User::create($request->all());
-        return redirect()->route('users.edit',$user->id)
+        $user = new User();
+        $user->clave = $request->input('clave');
+        $user->name = $request->input('name');
+        $user->apellidoP = $request->input('apellidoP');
+        $user->apellidoM = $request->input('apellidoM');
+        $user->email = $request->input('email');
+        $auxiliar=$request->input('password');
+        $user->password = $password = bcrypt($auxiliar);
+        $user->save();
+        return redirect()->route('users.index')
             ->with('info','Usuario guardado con éxito');
     }
 
@@ -49,7 +58,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        return view('users.show',compact('user'));
+        return view('CRUD_Usuarios.show',compact('user'));
     }
 
     /**
@@ -60,7 +69,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        return view('users.edit',compact('user'));
+        return view('CRUD_Usuarios.edit',compact('user'));
     }
 
     /**
@@ -70,10 +79,18 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $user)
+    public function update(UserUpdateRequest $request, User $user)
     {
-        $user->update($request->all());
-        return redirect()->route('users.edit',$user->id)
+        $user = new User();
+        $user->clave = $request->input('clave');
+        $user->name = $request->input('name');
+        $user->apellidoP = $request->input('apellidoP');
+        $user->apellidoM = $request->input('apellidoM');
+        $user->email = $request->input('email');
+        $auxiliar=$request->input('password');
+        $user->password = $password = bcrypt($auxiliar);
+        $user->update();
+        return redirect()->route('users.index')
             ->with('info','Usuario actualizado con éxito');
     }
 
@@ -86,6 +103,6 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
-        return back()->with('info','Usuario eliminado correctamente');
+        return back()->with('info','Usuario '.$user->name .' eliminado correctamente');
     }
 }
