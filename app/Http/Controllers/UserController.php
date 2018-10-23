@@ -24,7 +24,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('users.create');
     }
 
     /**
@@ -35,7 +35,9 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user=User::create($request->all());
+        return redirect()->route('users.edit',$user->id)
+            ->with('info','Usuario guardado con éxito');
     }
 
     /**
@@ -46,7 +48,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        //
+        return view('users.show',compact('user'));
     }
 
     /**
@@ -57,7 +59,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        //
+        return view('users.edit',compact('user'));
     }
 
     /**
@@ -69,7 +71,9 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+        $user->update($request->all());
+        return redirect()->route('users.edit',$user->id)
+            ->with('info','Usuario actualizado con éxito');
     }
 
     /**
@@ -80,6 +84,7 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        $user->delete();
+        return back()->with('info','Usuario eliminado correctamente');
     }
 }
