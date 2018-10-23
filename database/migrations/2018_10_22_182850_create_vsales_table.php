@@ -15,10 +15,10 @@ class CreateVsalesTable extends Migration
     {
         Schema::create('vsales', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('vcs_id')->unsigned();
+            $table->integer('vc_id')->unsigned();
             $table->time('salida');
             $table->timestamps();
-            $table->foreign('vcs_id')->references('id')->on('vcs')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('vc_id')->references('id')->on('vcs')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

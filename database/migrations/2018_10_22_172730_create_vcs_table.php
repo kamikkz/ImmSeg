@@ -15,10 +15,12 @@ class CreateVcsTable extends Migration
     {
         Schema::create('vcs', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->unsigned();
             $table->string('revisor');
             $table->string('turno');
             $table->string('jefe');
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
