@@ -15,9 +15,11 @@ class CreateTramitadorsTable extends Migration
     {
         Schema::create('tramitadors', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('vcs_id')->unsigned();
             $table->string('nombre');
             $table->string('gafete');
             $table->timestamps();
+            $table->foreign('vcs_id')->references('id')->on('vcs')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

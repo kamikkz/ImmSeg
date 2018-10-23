@@ -15,8 +15,10 @@ class CreateVentrasTable extends Migration
     {
         Schema::create('ventras', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('vcs_id')->unsigned();
             $table->time('entrada');
             $table->timestamps();
+            $table->foreign('vcs_id')->references('id')->on('vcs')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

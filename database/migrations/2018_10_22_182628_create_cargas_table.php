@@ -15,11 +15,13 @@ class CreateCargasTable extends Migration
     {
         Schema::create('cargas', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('vcs_id')->unsigned();
             $table->string('operador');
             $table->string('g_master');
             $table->integer('pieza');
             $table->float('kilo', 8, 2);
             $table->timestamps();
+            $table->foreign('vcs_id')->references('id')->on('vcs')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
