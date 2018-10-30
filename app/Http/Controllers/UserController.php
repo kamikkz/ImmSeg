@@ -35,7 +35,7 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(UserStoreRequest $request)
+    public function store(Request $request)
     {
         $user = new User();
         $user->clave = $request->input('clave');
@@ -79,15 +79,15 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(UserUpdateRequest $request, User $user)
+    public function update(UserUpdateRequest $request, $user)
     {
-        $user = new User();
-        $user->clave = $request->input('clave');
-        $user->name = $request->input('name');
-        $user->apellidoP = $request->input('apellidoP');
-        $user->apellidoM = $request->input('apellidoM');
-        $user->email = $request->input('email');
-        $auxiliar=$request->input('password');
+        $user=User::find($user);
+        $user->clave = $request->get('clave');
+        $user->name = $request->get('name');
+        $user->apellidoP = $request->get('apellidoP');
+        $user->apellidoM = $request->get('apellidoM');
+        //$user->email = $request->get('email');
+        $auxiliar=$request->get('password');
         $user->password = $password = bcrypt($auxiliar);
         $user->update();
         return redirect()->route('users.index')

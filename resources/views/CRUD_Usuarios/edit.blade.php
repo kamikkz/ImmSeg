@@ -14,7 +14,7 @@
                     @include('error')
                     @include('info')
                     {!! Form::model($user,['route'=>['users.update',$user->id],'method'=>'PUT']) !!}
-                    @include ('CRUD_Usuarios.partials.form')
+                    @include ('CRUD_Usuarios.partials.formEdit')
                     {!! Form::close() !!}
                 </div>
             </div>

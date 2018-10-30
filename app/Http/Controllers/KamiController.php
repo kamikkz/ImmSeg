@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Kami;
 use Illuminate\Http\Request;
-
+use SoapClient;
 class KamiController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +15,16 @@ class KamiController extends Controller
      */
     public function index()
     {
-        //
+        $opts=array(
+            'ssl'=>array(['cipher'=>'','verifypeer'=>false,'verify_peer_name'=>false])
+        );
+        $params = array ('encoding' => 'UTF-8', 'verifypeer' => false, 'verifyhost' => false, 'soap_version' => SOAP_1_1, 'trace' => 1, 'exceptions' => 1, "connection_timeout" => 1800, 'stream_context' => stream_context_create($opts) );
+        $url = "http://localhost:60861/ImmWS.asmx?WSDL";
+        $client = new SoapClient($url,$params);
+        //dd($client->__getTypes();)
+        //dd($client);
+        //dd($client->TceAgregacionMercancia());
+        return $client->TceAgregacionMercancia();
     }
 
     /**
