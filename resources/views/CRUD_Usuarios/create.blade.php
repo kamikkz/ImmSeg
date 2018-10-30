@@ -10,7 +10,7 @@
                     </div>
                     @include('error')
                     @include('info')
-                    {!! Form::model(['route'=>['users.store'],'method'=>'POST']) !!}
+                    {!! Form::model(['route'=>['users.store']]) !!}
                     @include ('CRUD_Usuarios.partials.form')
                     {!! Form::close() !!}
                 </div>

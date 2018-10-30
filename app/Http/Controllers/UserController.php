@@ -37,6 +37,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        return $request;
         $user = new User();
         $user->clave = $request->input('clave');
         $user->name = $request->input('name');

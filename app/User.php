@@ -30,7 +30,5 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function ControlVehicular(){
-        return $this->hasMany('App\VehicularControl');
-    }
+
 }

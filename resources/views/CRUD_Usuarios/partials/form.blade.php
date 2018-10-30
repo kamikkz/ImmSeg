@@ -78,6 +78,7 @@
                             </div>
                         </div>
                     </div>
+                    {{ csrf_field() }}
                     <div class="card-footer">
                         {!! Form::submit('Registrar nuevo usuario',['class'=>'btn btn-primary form-control color02'])!!}
                     </div>

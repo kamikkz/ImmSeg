@@ -7,6 +7,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('vcs','VcController');
 Route::resource('users','UserController');
 Route::resource('kamis','KamiController');
 Route::middleware(['auth'])->group(function (){

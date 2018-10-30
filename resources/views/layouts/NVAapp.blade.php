@@ -126,7 +126,7 @@
 <script src="{{ asset('js/bootstrap-select.js') }}" defer></script>
 <script src="{{ asset('js/dataTables.js') }}"></script>
 <script src="{{ asset('js/dataTablesBootstrap4.js') }}"></script>
-<script src="{{ asset('js/uaeh.js') }}" defer></script>
+<script src="{{ asset('js/imm.js') }}" defer></script>
 
 </body>
 </html>
