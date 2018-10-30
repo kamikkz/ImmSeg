@@ -3,7 +3,7 @@
                 <div class="card">
                     <div class="card-header">
                         <h2>Control Vehicular</h2>
-                        <a href="{{route('vcs.create')}}" class="btn btn-primary pull-right color04">Crear Nuevo Control Vehicular</a>
+                        <a href="{{route('vehicular_controls.create')}}" class="btn btn-primary pull-right">Crear Nuevo Control Vehicular</a>
                     </div>
 
                     <div class="card-body">
@@ -41,23 +41,23 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($vcs as $vc)
+                            @foreach($vehicularControls as $vehicularControl)
                                 <tr>
-                                    <td>a</td>
-                                    <td>a</td>
-                                    <td>b</td>
-                                    <td>a</td>
-                                    <td>a</td>
-                                    <td>a</td>
-                                    <td>a</td>
-                                    <td>a</td>
-                                    <td>a</td>
-                                    <td>a</td>
-                                    <td>a</td>
-                                    <td>a</td>
-                                    <td>{{$vc->turno }}</td>
-                                    <td>{{$vc->revisor }}</td>
-                                    <td>{{$vc->jefe }}</td>
+                                    <td>{{$vehicularControl->turno }}</td>
+                                    <td>{{$vehicularControl->revisor }}</td>
+                                    <td>{{$vehicularControl->jefe }}</td>
+                                    <td>{{$vehicularControl->turno }}</td>
+                                    <td>{{$vehicularControl->revisor }}</td>
+                                    <td>{{$vehicularControl->jefe }}</td>
+                                    <td>{{$vehicularControl->turno }}</td>
+                                    <td>{{$vehicularControl->revisor }}</td>
+                                    <td>{{$vehicularControl->jefe }}</td>
+                                    <td>{{$vehicularControl->turno }}</td>
+                                    <td>{{$vehicularControl->revisor }}</td>
+                                    <td>{{$vehicularControl->jefe }}</td>
+                                    <td>{{$vehicularControl->turno }}</td>
+                                    <td>{{$vehicularControl->revisor }}</td>
+                                    <td>{{$vehicularControl->jefe }}</td>
                                 </tr>
                             @endforeach
                             </tbody>

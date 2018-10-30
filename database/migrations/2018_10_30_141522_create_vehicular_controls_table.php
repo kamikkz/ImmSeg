@@ -17,12 +17,12 @@ class CreateVehicularControlsTable extends Migration
             $table->increments('id');
             //Datos del vehiculo
             $table->string('chofer');
-            $table->string('gafete');
+            $table->string('gafeteV');
             $table->string('tipo');
             $table->string('placa');
             //Tamitador
             $table->string('nombre');
-            $table->string('gafete');
+            $table->string('gafeteT');
             //Carga
             $table->string('operador');
             $table->string('g_master');

@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header color01">Nuevo usuario</div>
+                    <div class="card-header">Nuevo registro de Control Vehicular</div>
                     <div class="card-body">
                         @csrf
                         <div class="form-group row">

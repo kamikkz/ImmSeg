@@ -14,7 +14,8 @@ class VehicularControlController extends Controller
      */
     public function index()
     {
-        //
+        $vehicularControls=VehicularControl::all();
+        return view('CRUD_ControlVehicular.index',compact('vehicularControls'));
     }
 
     /**
@@ -24,7 +25,7 @@ class VehicularControlController extends Controller
      */
     public function create()
     {
-        //
+        return view('CRUD_ControlVehicular.create');
     }
 
     /**
