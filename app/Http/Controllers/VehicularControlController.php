@@ -36,7 +36,31 @@ class VehicularControlController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $vehicularControl = new VehicularControl();
+        $vehicularControl->chofer=$request->input('chofer');
+        $vehicularControl->gafeteV=$request->input('gafeteV');
+        $vehicularControl->tipo=$request->input('tipo');
+        $vehicularControl->placa=$request->input('placa');
+
+        $vehicularControl->nombre=$request->input('nombre');
+        $vehicularControl->gafeteT=$request->input('gafeteT');
+
+        $vehicularControl->operador=$request->input('operador');
+        $vehicularControl->g_master=$request->input('g_master');
+        $vehicularControl->piezas=$request->input('piezas');
+        $vehicularControl->kilos=$request->input('kilos');
+
+        $vehicularControl->hr_entrada=$request->input('hr_entrada');
+        $vehicularControl->hr_salida=$request->input('hr_salida');
+
+        $vehicularControl->revisor="Soy el revisor";
+        $vehicularControl->turno="Soy el turno";
+        $vehicularControl->jefe="Soy el jefe de jefes";
+
+        $vehicularControl->save();
+
+        return redirect()->route('vehicular_controls.index')
+            ->with('info','Registro guardado con éxito');
     }
 
     /**
@@ -47,7 +71,7 @@ class VehicularControlController extends Controller
      */
     public function show(VehicularControl $vehicularControl)
     {
-        //
+        return "edito";
     }
 
     /**
@@ -58,7 +82,7 @@ class VehicularControlController extends Controller
      */
     public function edit(VehicularControl $vehicularControl)
     {
-        //
+        return "edito";
     }
 
     /**

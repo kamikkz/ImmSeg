@@ -107,7 +107,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <label for="piezas" class="col-form-label text-md-right">Piezas</label>
-                                        <input id="piezas" type="text" class="form-control{{ $errors->has('piezas') ? ' is-invalid' : '' }}" name="piezas" value="{{ old('piezas') }}" required autofocus>
+                                        <input id="piezas" type="number" class="form-control{{ $errors->has('piezas') ? ' is-invalid' : '' }}" name="piezas" value="{{ old('piezas') }}" required autofocus>
                                         @if ($errors->has('piezas'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('piezas') }}</strong>
@@ -116,7 +116,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <label for="kilos" class="col-form-label text-md-right">Kilos</label>
-                                        <input id="kilos" type="text" class="form-control{{ $errors->has('kilos') ? ' is-invalid' : '' }}" name="kilos" value="{{ old('kilos') }}" required autofocus>
+                                        <input step='0.001' id="kilos" type="number" class="form-control{{ $errors->has('kilos') ? ' is-invalid' : '' }}" name="kilos" value="{{ old('kilos') }}" required autofocus>
                                         @if ($errors->has('kilos'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('kilos') }}</strong>

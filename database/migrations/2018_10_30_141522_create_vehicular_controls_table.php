@@ -27,7 +27,7 @@ class CreateVehicularControlsTable extends Migration
             $table->string('operador');
             $table->string('g_master');
             $table->integer('piezas');
-            $table->integer('kilos');
+            $table->decimal('kilos',18,3);
             //Hora
             $table->time('hr_entrada');
             $table->time('hr_salida')->nullable();
