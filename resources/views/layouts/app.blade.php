@@ -12,7 +12,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/imm.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/Imm.css') }}" rel="stylesheet">
 
     <!-- bootstrap-select/1.13.1 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

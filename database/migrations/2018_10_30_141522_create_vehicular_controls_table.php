@@ -29,8 +29,8 @@ class CreateVehicularControlsTable extends Migration
             $table->integer('piezas');
             $table->integer('kilos');
             //Hora
-            $table->dateTime('hr_entrada');
-            $table->dateTime('hr_salida')->nullable();
+            $table->time('hr_entrada');
+            $table->time('hr_salida')->nullable();
             //Datos guardia
             $table->string('revisor');
             $table->string('turno');

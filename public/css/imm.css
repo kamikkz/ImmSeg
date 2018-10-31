@@ -1,0 +1,20 @@
+.DatosDelVehiculo{
+    background-color: #0093d3;
+    color: black;
+    border-radius: 20px;
+}
+.Tramitador{
+    background-color: #fff10c;
+    color: black;
+    border-radius: 20px;
+}
+.Carga{
+    background-color: #cc006b;
+    color: white;
+    border-radius: 20px;
+}
+.Hora{
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+}
