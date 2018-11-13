@@ -71,7 +71,7 @@ class VehicularControlController extends Controller
      */
     public function show(VehicularControl $vehicularControl)
     {
-        return "edito";
+        return view('CRUD_ControlVehicular.show',compact('vehicularControl'));
     }
 
     /**
